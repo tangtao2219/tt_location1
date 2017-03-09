@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transparent"
+                android:src="?attr/homeAsUpIndicator"
+                android:layout_gravity="center"
+                android:id="@+id/back_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_content"
+                android:text="讲座内容信息"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f8f8f8">
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:background="#f8f8f8"
+            android:hint="写评论。。。"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:id="@+id/iv_delete"
+            android:layout_marginRight="@dimen/font_22"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:visibility="gone"
+            android:background="@drawable/transparent"/>
+
+        <Button
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:id="@+id/b_send"
+            android:background="@drawable/transparent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_comment"
+            android:src="@drawable/tab_weixin_normal"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_collect"
+            android:src="@android:drawable/btn_star_big_off"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="?attr/actionModeShareDrawable"
+            android:id="@+id/iv_share"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

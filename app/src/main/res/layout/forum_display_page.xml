@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:entries="@array/distance" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="讲座|学校|用户"
+                android:imeOptions="actionSearch"
+                android:drawableLeft="@drawable/actionbar_search_icon"
+                android:id="@+id/search"
+                android:background="#f8f8f8"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.file.tangtao.tt_location.fragment.XListView
+            android:id="@+id/forumDisplayListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:listSelector="@color/white" >
+
+        </com.file.tangtao.tt_location.fragment.XListView>
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/forumDisplayProgressBar"-->
+            <!--style="?android:attr/progressBarStyleLarge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>

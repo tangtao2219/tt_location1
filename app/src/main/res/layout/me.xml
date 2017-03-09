@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:text="我的"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView12"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:layout_marginLeft="@dimen/font_30"/>
+    </LinearLayout>
+
+    <!--*头像昵称等-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#f8f8f8"
+        android:layout_marginTop="@dimen/font_36">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:layout_gravity="center"
+                android:background="#F8F8F8"
+                android:id="@+id/head_img"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:id="@+id/mname">
+
+                <TextView
+                    android:text="昵称"
+                    android:layout_gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nickname_text"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="查看或编辑个人主页。。"
+                    android:layout_gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/page_text"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--我的关注-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/focus"
+                android:layout_gravity="center"
+                android:background="#f8f8f8"
+                android:id="@+id/focus_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="我的关注"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:id="@+id/foucs_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--我的收藏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/collect"
+                android:layout_gravity="center"
+                android:background="#f8f8f8"
+                android:id="@+id/collect_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="我的收藏"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:id="@+id/collect_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--我的评论-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/comment"
+                android:layout_gravity="center"
+                android:background="#f8f8f8"
+                android:id="@+id/comment_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="我的评论"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--反馈-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/feedback"
+                android:layout_gravity="center"
+                android:background="#f8f8f8"
+                android:id="@+id/feedback_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="反馈"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedback_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--设置-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/settings"
+                android:layout_gravity="center"
+                android:background="#f8f8f8"
+                android:id="@+id/setup_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="设置"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:id="@+id/setup_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/id_tab_main"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#F8F8F8"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_unselect"
+            android:background="#F8F8F8"
+            android:id="@+id/id_tab_main_img"
+            />
+
+        <TextView
+            android:text="主页"
+            android:textSize="12sp"
+            android:textColor="#8a8a8a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_look"
+        android:orientation="vertical"
+        android:background="#F8F8F8"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/look_unselect"
+            android:background="#F8F8F8"
+            android:clickable="true"
+            android:id="@+id/id_tab_look_img"/>
+
+        <TextView
+            android:text="发现"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8a8a8a"
+            android:id="@+id/look_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_me"
+        android:orientation="vertical"
+        android:background="#F8F8F8"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:src="@drawable/me_unselect"
+            android:clickable="false"
+            android:id="@+id/id_tab_me_img" />
+
+        <TextView
+            android:text="我的"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8a8a8a"
+            android:id="@+id/me_text" />
+    </LinearLayout>
+
+</LinearLayout>

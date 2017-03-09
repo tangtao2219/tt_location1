@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distance">
+        <item>1km</item>
+        <item>2km </item>
+        <item>3km</item>
+        <item>4km</item>
+        <item>5km</item>
+    </string-array>
+
+
+</resources>
